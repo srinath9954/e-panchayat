@@ -1,45 +1,40 @@
-
-/* Reset some default styles for the body */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Style for the fixed navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #163abe; /* Change this to your desired background color */
-    color: #fff; /* Change this to your desired text color */
-    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #163abe; 
+    color: #fff; 
+    padding: 10px 20px; 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000; 
 }
 
-/* Style for the e-Panchayat title on the left */
 .navbar-left h1 {
     margin: 0;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px; 
 }
 
-/* Style for the login/signup button on the right */
 .login-signup-btn {
-    background-color: #ff6600; /* Change this to your desired button color */
-    color: #fff; /* Change this to your desired text color */
+    background-color: #ff6600; 
+    color: #fff;
     border: none;
-    padding: 10px 20px; /* Adjust the padding as needed */
-    border-radius: 5px; /* Adjust the border radius as needed */
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .login-signup-btn:hover {
-    background-color: #ff9900; /* Change this to the hover color */
+    background-color: #ff9900; 
 }
 
 .state-box{
@@ -53,35 +48,14 @@ body {
     align-content: center;
     justify-content: center;
   }
-/* Style for the state boxes */
-.state-box {
-    position: relative;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
-    border-radius: 3px;
-    cursor: pointer;
-    display: flex;
-    /* Use flexbox to center content */
-    flex-direction: column;
-    /* Stack the image and title vertically */
-    align-items: center;
-    /* Center content horizontally */
-    justify-content: center;
-    /* Center content vertically */
-    text-align: center;
-    margin: 10px;
-    /* Add some margin between state boxes */
-}
-
-/* Style for the state images */
-.state-img {
+  .state-box:hover{
+    transform: scale(1.2);
+  }
+  .state-img{
     transition: 0.4s;
     aspect-ratio: 1/1;
-    max-width: 120px;
-    max-height: 120px;
     object-fit: cover;
-}
+  }
   
   .state-title{
     font-size: 1rem;
